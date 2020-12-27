@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\jpike\Documents\GitHub\CodingDojoAssigments\04_Java_Stack\Spring_projects\warGames\.metadata\.plugins\org.eclipse.jdt.core
+3676228353.index
+2488998916.index
+964728427.index
