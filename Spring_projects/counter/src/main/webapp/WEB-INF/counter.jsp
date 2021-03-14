@@ -15,12 +15,12 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron p-3 m-5">
+		<div class="jumbotron p-3 m-5 text-center" style="background-color: #6c757d">
 			<h1>You have visited ${pageViews} times.</h1>
 			<form action= "/home" method="get">
-				<input type="submit" value="Test Another Visit?" />
-		</form>
-      </div>
+				<input type="submit" value="Test Another Visit?" class="btn btn-success"/>
+			</form>
+      	</div>
 	</div>
 </body>
 </html>

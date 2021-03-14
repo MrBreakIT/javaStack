@@ -1,6 +1,9 @@
-// import java.util.ArrayList;
-// import java.util.Collections;
-// import java.util.Random;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+import jdk.jfr.internal.SecuritySupport;
+
 import java.util.*;
 
 
@@ -15,13 +18,14 @@ public class Basics {
             testArr.add(-2);
 
 // ******** Function Calls
+        // System.out.println("**<< Print to 255 >>**");
         printTo255(0);
         printTo255Odds(0);
         printTo255Sum(0);
         iterate(testArr);
         Integer x= findMax(testArr);
             System.out.println(x);
-        Double y= average(testArr);
+        Integer y= average(testArr);
             System.out.println(y);
         ArrayList<Integer> x1= arrTo255Odds(0);
             System.out.println(x1);
@@ -36,15 +40,16 @@ public class Basics {
             System.out.println(x5);
     }
     public static Integer printTo255(int num){
-            while(num<=255){
-                System.out.println(num);
-                num++;
-            }
-            return num;
+        System.out.println("***************");
+        while(num<=255){
+            System.out.println(num);
+            num++;
+        }
+        return num;
     }
     public static Integer printTo255Odds(int num){
         while(num<=255){
-            if(num%2! = 0){
+            if(num % 2 != 0){
                 System.out.println(num);
                 num++;
             }
@@ -78,8 +83,8 @@ public class Basics {
         }
         return max;
     }
-    public static Double average(ArrayList<Integer> arr){
-        double sum = 0;
+    public static Integer average(ArrayList<Integer> arr){
+        int sum = 0;
         for(int i = 0; i < arr.size(); i++){
                 sum += arr.get(i);
         }
@@ -88,7 +93,7 @@ public class Basics {
     public static ArrayList<Integer> arrTo255Odds(int num){
         ArrayList<Integer> y = new ArrayList<Integer>();
         while(num<=255){
-            if(num%2 != 0){
+            if(num % 2 != 0){
                 
                 y.add(num);
                 num++;

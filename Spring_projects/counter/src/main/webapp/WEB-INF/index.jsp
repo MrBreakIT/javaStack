@@ -15,12 +15,13 @@
 </head>
 <body>
 	<div class="container text-center">
-		<div class="jumbotron p-3 m-5">
+		<div class="jumbotron p-3 m-5" style="background-color: #6c757d">
 			<h1 class="text-center">Welcome to Page Hit-Count!</h1>
-			  <div class="alert alert-light text-center">Page views: ${pageViews}
+			  <div class="alert alert-light text-center text-dark" style="background-color: green; font-weight:bold">Page views: ${pageViews}
 			  </div> 			       	
 		</div>
-	  <a href="/reset" class="col-sm-6 btn btn-secondary mx-auto">Reset Counter</a> 
+		<a href="/counter" class="col-sm-6 btn btn-secondary mx-auto m-2">Counter total</a>
+	  <a href="/reset" class="col-sm-6 btn btn-secondary mx-auto m-2">Reset Counter</a> 
 	</div>
 </body>
 </html>

@@ -2,6 +2,7 @@ package com.johnpike.javaBeltExam3.models;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ public class LoginUser {
 
 	@NotEmpty(message = "Email required")
 	@Email(message = "Invalid Email")
+	@Pattern(regexp = ".+@.+\\..+", message = "Invalid email pattern")
 	private String email;
 
 	@NotEmpty(message = "Password required")
